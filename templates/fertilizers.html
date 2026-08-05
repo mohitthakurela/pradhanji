@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>खाद एवं कीटनाशक | प्रधान जी किसान सेवा केन्द्र</title>
+    <meta name="description" content="सरकारी नीम कोटेड यूरिया, IFFCO DAP, कात्यायनी, जिंक, कीटनाशक दवाएं - प्रधान जी किसान सेवा केन्द्र अलीगढ़। Call +91 93681 61030">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container top-bar-inner">
+        <div class="top-bar-info">
+            <span>📍 पुलिस चौकी के पास, गोंडा (खैर टेंटिगाँव रोड), अलीगढ़</span>
+            <span>⏰ सुबह 8:00 से शाम 7:00 बजे तक</span>
+        </div>
+        <div class="top-bar-social">
+            <span>जीएसटी: 09PFPPK2616B1Z7 |</span>
+            <a href="https://www.instagram.com/pradhanjikisansevakendra/" target="_blank" title="Instagram">
+                📸 Instagram
+            </a>
+            <a href="https://www.facebook.com/share/1EaLkiRtKG/" target="_blank" title="Facebook">
+                📘 Facebook
+            </a>
+        </div>
+    </div>
+</div>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="/" class="brand">
+            <img src="/static/logo.jpg" alt="Logo" class="brand-logo">
+            <div class="brand-text">
+                <span class="brand-name">प्रधान जी किसान सेवा केन्द्र</span>
+                <span class="brand-gst">GSTIN: 09PFPPK2616B1Z7</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="/" class="nav-link">होम</a></li>
+            <li><a href="/fertilizers" class="nav-link active">🧪 खाद व दवाएं</a></li>
+            <li><a href="/seeds" class="nav-link">🌱 बीज</a></li>
+            <li><a href="/#contact" class="nav-link">📞 संपर्क</a></li>
+        </ul>
+
+        <a href="tel:+919368161030" class="header-phone">
+            <span>📞</span>
+            <span class="phone-number">+91 93681 61030</span>
+        </a>
+    </div>
+</header>
+
+<section class="page-header">
+    <div class="container">
+        <h1>🧪 खाद एवं कीटनाशक दवाएं</h1>
+        <p style="font-size:1.1rem;opacity:0.9;">सरकारी यूरिया, DAP, IFFCO, कात्यायनी उत्पाद एवं कीट व रोग नियंत्रण दवाएं</p>
+        <a href="/" class="back-link">← होम पेज पर वापस जाएँ</a>
+    </div>
+</section>
+
+<section class="product-detail-list">
+    <div class="container">
+        <!-- Live Search Bar -->
+        <div class="search-filter-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" class="search-input" placeholder="🔍 खाद या कीटनाशक खोजें (e.g. यूरिया, DAP, IFFCO, कात्यायनी, कोराजन, जिंक...)" onkeyup="filterProducts()">
+            </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            {% for p in products %}
+            <div class="product-card product-item" data-name="{{ p.name|lower }}">
+                <div class="product-image">
+                    <img src="{{ p.image }}" alt="{{ p.name }}">
+                    <span class="product-category-badge">खाद / दवा</span>
+                    {% if p.in_stock %}
+                    <span class="product-stock-badge stock-in">✔ स्टॉक में उपलब्ध</span>
+                    {% else %}
+                    <span class="product-stock-badge stock-out">✖ पूछताछ करें</span>
+                    {% endif %}
+                </div>
+                <div class="product-body">
+                    <h3>{{ p.name }}</h3>
+                    <p class="product-desc">{{ p.description }}</p>
+                    <div class="product-meta">
+                        {% if p.packing %}<span class="product-packing">📦 {{ p.packing }}</span>{% endif %}
+                        <span class="product-ask-tag">📲 बेस्ट रेट उपलब्ध</span>
+                    </div>
+                    <a href="https://wa.me/919368161030?text=नमस्ते, मुझे *{{ p.name }}* ({{ p.packing }}) का आज का रेट और उपलब्धता बताएं।" target="_blank" class="btn-ask">
+                        💬 व्हाट्सएप पर आज का रेट पूछें
+                    </a>
+                </div>
+            </div>
+            {% else %}
+            <div class="empty-state" style="grid-column: 1 / -1;">
+                <p>अभी कोई खाद या दवा उत्पाद उपलब्ध नहीं है। कृपया फोन पर संपर्क करें।</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 प्रधान जी किसान सेवा केन्द्र | GSTIN: 09PFPPK2616B1Z7</p>
+        <p class="footer-small">प्रो. आशीष कुमार, महेंद्र सिंह प्रधान, मोहित सिंह प्रधान | संपर्क: +91 93681 61030</p>
+    </div>
+</footer>
+
+<div class="mobile-cta">
+    <a href="tel:+919368161030" class="mobile-cta-btn call">📞 कॉल करें</a>
+    <a href="https://wa.me/919368161030?text=नमस्ते, मुझे खाद/कीटनाशक का आज का रेट जानना है।" target="_blank" class="mobile-cta-btn whatsapp">💬 व्हाट्सएप</a>
+</div>
+
+<script>
+function filterProducts() {
+    const q = document.getElementById('searchInput').value.toLowerCase();
+    const items = document.querySelectorAll('.product-item');
+    items.forEach(item => {
+        const name = item.getAttribute('data-name');
+        if (name.includes(q)) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+{
+  "seeds": [
+    {
+      "id": 1,
+      "name": "गेहूँ का बीज (HD 2967 - IARI)",
+      "description": "यह गेहूँ की उन्नत किस्म है जो प्रति एकड़ 25-30 क्विंटल पैदावार देती है। पीले रतुआ बीमारी के प्रति प्रतिरोधी।",
+      "image": "/static/wheat_bag.jpg",
+      "packing": "40 Kg बैग",
+      "in_stock": true
+    },
+    {
+      "id": 2,
+      "name": "धान का बीज (Pusa Basmati 1121)",
+      "description": "बासमती धान की सबसे बेहतरीन किस्म। लंबे, खुशबूदार चावल और बाजार में सबसे ज्यादा भाव मिलने वाली वैरायटी।",
+      "image": "/static/paddy_bag.jpg",
+      "packing": "10 Kg बैग",
+      "in_stock": true
+    },
+    {
+      "id": 3,
+      "name": "सरसों का बीज (Pioneer 45S46)",
+      "description": "उच्च तेल प्रतिशत (42%+) वाली हाइब्रिड सरसों। झुलसा बीमारी से बचाव और अधिक शाखाएँ।",
+      "image": "/static/mustard_packet.jpg",
+      "packing": "1 Kg बैग",
+      "in_stock": true
+    }
+  ],
+  "fertilizers": [
+    {
+      "id": 1,
+      "name": "सरकारी यूरिया (Neem Coated Urea - IFFCO)",
+      "description": "फसल में हरियाली और नाइट्रोजन की पूर्ति के लिए 100% नीम कोटेड यूरिया। सरकारी दरों पर उपलब्ध।",
+      "image": "/static/urea_bag.jpg",
+      "packing": "45 Kg बैग",
+      "in_stock": true
+    },
+    {
+      "id": 2,
+      "name": "DAP खाद (IFFCO / KRIBHCO)",
+      "description": "फास्फोरस और नाइट्रोजन का उत्तम संतुलन। बोआई के समय जड़ों की मजबूती के लिए अति आवश्यक।",
+      "image": "/static/dap_bag.jpg",
+      "packing": "50 Kg बैग",
+      "in_stock": true
+    },
+    {
+      "id": 3,
+      "name": "जिंक सल्फेट 33% (Mono Zinc)",
+      "description": "धान में खैरा बीमारी और फसलों में पीलापन दूर करने के लिए अति सूक्ष्म पोषक तत्व।",
+      "image": "/static/zinc_packet.jpg",
+      "packing": "4 Kg बैग",
+      "in_stock": true
+    },
+    {
+      "id": 4,
+      "name": "कीटनाशक (Coragen - Katyayani / FMC)",
+      "description": "इल्ली, तना छेदक व इल्लियों पर लंबे समय तक असरदार नियंत्रण। धान, गन्ना व सब्जियों के लिए सर्वोत्तम।",
+      "image": "/static/pesticide_bottle.jpg",
+      "packing": "150 ml बॉटल",
+      "in_stock": true
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "image": "/static/uploads/b555fb4e6a614ef99bdb3fd6636ef09b.jpeg",
+      "caption": "दुकान का मुख्य प्रवेश द्वार (Shop Front View)"
+    },
+    {
+      "id": 2,
+      "image": "/static/uploads/f99a9ebe7a5e4f12b9f1e036a8005a2a.jpeg",
+      "caption": "खाद एवं बीज गोदाम (Warehouse Stock)"
+    },
+    {
+      "id": 3,
+      "image": "/static/uploads/94c95b7d37f045b6a5914409292de260.jpeg",
+      "caption": "दुकान संचालक एवं किसान सेवा दल"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": 1,
+      "name": "रामपाल शर्मा",
+      "phone": "9876543210",
+      "message": "गेहूँ का बीज (HD 2967) के 5 बैग चाहिए। क्या रेट है और दुकान पर उपलब्ध है?",
+      "date": "2026-08-01 09:30 AM"
+    }
+  ]
+}
