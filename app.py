@@ -23,7 +23,7 @@ UPLOAD_DIR = "static/uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 # Simple admin password - change this!
-ADMIN_PASSWORD = "admin123"
+ADMIN_PASSWORD = "Ashish06"
 
 
 def save_uploaded_file(upload_file: UploadFile) -> str:
@@ -203,7 +203,7 @@ async def admin_page(request: Request, password: str = ""):
                     Login
                 </button>
             </form>
-            <p style="color:#666;font-size:0.85rem;margin-top:15px;">Default password: admin123</p>
+            <p style="color:#666;font-size:0.85rem;margin-top:15px;"></p>
             </div></body></html>
         """)
     data = load_data()
